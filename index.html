@@ -7,8 +7,12 @@
     <title>Sorcière 2.0</title>
     <link rel="stylesheet" href="style.css">
 
-  
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Ajoutez le slick-theme.css si vous voulez un style par défaut -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
 
+   
 </head>
 
 
@@ -19,6 +23,11 @@
 
     <div class="blocHorizontal">
     
+        <div class="responsive mob">
+            <div class="burger mob" id="burger" >
+                <span></span>
+            </div> 
+        </div>
     
     
     <header id="haut">
@@ -49,9 +58,16 @@
     <section class="intro slide ">
 
 
-       
+        <div class="slider" id="slider">
+            <div><img src="images/carousel/image1.png" alt="image1"></div>
+            <div><img src="images/carousel/image2.png" alt="image1"></div>
+            <div><img src="images/carousel/image3.png" alt="image1"></div>
+            <div><img src="images/carousel/image4.png" alt="image1"></div>
+            <div><img src="images/carousel/image5.png" alt="image1"></div>
+           
+          </div>
 
-
+          
 
 
 
@@ -117,6 +133,11 @@
 
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 
 <script src="script.js"></script>
