@@ -1,5 +1,4 @@
-let header = document.getElementById("haut");
-header.addEventListener ('mouseover', ()=>{header.classList.toggle('active');});
+
 
 // CAROUSEL
 $('.slider').slick({
@@ -31,5 +30,36 @@ $('.slider').slick({
     ]
   });
 
- 
+// Burger  croix
+const burger = document.querySelector('.burger');
+const rond = document.querySelector('.rond');
+const menu = document.querySelector('.menu');
+
+burger.addEventListener ('click', ()=>{
+    burger.classList.toggle('active');
+});
+
+burger.addEventListener ('click', ()=>{
+    rond.classList.toggle('active');
+});
+burger.addEventListener ('click', ()=>{
+    menu.classList.toggle('active');
+});
+
           
+
+// Burger  croix
+const burgerf = document.querySelector('.burgerfin');
+const rondf = document.querySelector('.rondfin');
+const menuf = document.querySelector('.menufin');
+
+burgerf.addEventListener ('click', ()=>{
+    burgerf.classList.toggle('active');
+});
+
+burgerf.addEventListener ('click', ()=>{
+    rondf.classList.toggle('active');
+});
+burgerf.addEventListener ('click', ()=>{
+    menuf.classList.toggle('active');
+});

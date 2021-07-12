@@ -1,3 +1,5 @@
+/*! GENERAL */
+
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +10,7 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
-ul ul{
-    text-decoration: none;
-    
-}
-ul{
-   list-style-type: none;
-    padding: 30px; 
-}
+
 body{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -26,6 +21,7 @@ body{
     background: url(images/Vector\ 9.png) black no-repeat ;
 }
 h1{
+    /* font-size: calc(20px + 5vw); */
     font-size: 70px;
     margin: 40px;
     align-self: flex-end;
@@ -48,15 +44,6 @@ p{
     width: 700px;
 
 }
-/* ASSENCEURS */
-/* #scroll_to_top{
-    position: absolute; 
-    bottom: 50px;
-    right: 30vw;
-    left: 90%;
-    z-index: 100;
-  } */
-
   .slide {
     width: 100vw;
     height: 100vh;
@@ -65,7 +52,11 @@ p{
     align-items: center;
     padding: 100px 0 85px 0;
 }
-/* SCROLL A DROITE */
+.ombre{
+    box-shadow: 15px -15px 0px #8F0523;
+
+}
+/* ! SCROLL A DROITE */
 .blocHorizontal {
     display: flex;
     width: 600vw;
@@ -87,22 +78,101 @@ p{
 
 /*! ACCUEIL */
 
-header.active{
-    background-color: #8F0523;
-    width: 150px;
+
+
+/* menu burger */
+.rond{
+    background: #51004A;
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -55px;
+    top: -55px;    
 }
-header{
-    background-color: #8F0523;
-    width: 25px ;
+.rond.active{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: -60px;
+    top: -60px;
+    border-radius: 50%;
+    background: #51004A; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.burger{
+    height: 24px;
+    width: 42px;
+    cursor: pointer;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+}
+.burger span{   
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 15px;    
+}
+.burger span::before, .burger span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color:white;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;}
+.burger span::before{
+    transform: translateY(-10px);
+}
+.burger span::after{
+    transform: translateY(10px);
+}
+.burger.active span{
+    background-color: transparent;
+}
+.burger.active span::before{
+    transform: translateY(0px) rotateZ(45deg);
+}
+.burger.active span::after{
+    transform: translateY(0px) rotateZ(-45deg);
+}   
+
+
+ul{
+    display: none;
+}
+ul.active{
+    display: block;
+    list-style-type: none;
+    padding: 30px;
+    margin-top: 50px;
+    line-height: 170%;
+    font-size: 20px;
+    color: white;
+}
+ul a:visited{
+    color: white;
 }
 
 
-.ombre{
-    box-shadow: 15px -15px 0px #8F0523;
-}
-.accueil, footer{
-   width: 85vw;
-}
+
+
+
+
+
+
+
+
+
 /* !INTRO CAROUSEL */
 .intro{
     flex-direction: column;
@@ -119,17 +189,13 @@ header{
   height: 250px;
   /* margin: 0 15px; */
 } 
-/* !FOOTER */
-footer{
-    background-color: #8F0523;
-    height: 100vh;
-    width: 250px ;
-}
+
+
 /*! P1--------------------------- */
 .p1{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 20px auto auto;
     padding: 50px;
 }
 .p1 .violet{
@@ -180,3 +246,153 @@ footer{
     grid-column: 1/3;
     /* margin-left: 200px; */
 }
+
+/* !FOOTER */
+
+/* menu burger */
+.rondfin{
+    background: #51004A;
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    bottom: -55px;    
+}
+.rondfin.active{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: -170px;
+    bottom: -60px;
+    border-radius: 50%;
+    background: #51004A; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.burgerfin{
+    height: 24px;
+    width: 42px;
+    cursor: pointer;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+}
+.burgerfin span{   
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 15px;    
+}
+.burgerfin span::before, .burgerfin span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color:white;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;}
+.burgerfin span::before{
+    transform: translateY(-10px);
+}
+.burgerfin span::after{
+    transform: translateY(10px);
+}
+.burgerfin.active span{
+    background-color: transparent;
+}
+.burgerfin.active span::before{
+    transform: translateY(0px) rotateZ(45deg);
+}
+.burgerfin.active span::after{
+    transform: translateY(0px) rotateZ(-45deg);
+}   
+
+a{
+    color: white;
+}
+a:visited{
+    color: white;
+} 
+@media (max-width: 1100px){
+h1{
+    font-size: 50px;
+}
+
+}
+@media (max-width: 900px){
+    
+   .slide{
+       flex-direction: column;
+       padding: 20px;
+   }
+   h1{
+       align-self: unset;
+   }
+   .end{
+       align-self: unset;
+   }
+   img.ombre{
+       width: 200px;
+   }
+   .violet{
+       width: 450px;
+       margin: 0;
+   }
+   /* ! SCROLL A DROITE */
+.blocHorizontal {
+    /* width: 600vw; */
+    /* transform: rotate(90deg) translateY(-100vh); */
+    transform: none;
+    /* transform-origin: top left; */
+    flex-direction: column;
+}
+.container {
+    /* width: 100vh; */
+    /* height: 100vw; */
+    transform: none;
+    /* transform-origin: top left; */
+    /* overflow-x: hidden;  */
+    /* backround-color: black; */
+}
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+.slide{
+    margin: 0px;
+    padding: 0px;
+}
+/* !FOOTER */
+
+/* menu burger */
+.rondfin{
+    background: #51004A;
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    bottom: -55px;    
+}
+.rondfin.active{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: -170px;
+    bottom: -60px;
+    border-radius: 50%;
+    background: #51004A; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+    
+    }
