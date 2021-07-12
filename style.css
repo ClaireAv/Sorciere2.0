@@ -362,6 +362,19 @@ a:visited{
    }
    .rond{
     border: none;
+    width: 100px;
+    height: 100px;
+    background-color: #51004A;
+    top: -20px;
+    left: -20px;
+   }
+   .burger{
+    left: 35px;
+    top: 55px;
+   }
+   .burger.active{
+    left: 75px;
+    top: 95px;
    }
   /* .burger span, .burger span::before, .burger span::after, .burgerfin span, .burgerfin span::before, .burgerfin span::after{
      background-color: #51004A; 
@@ -419,7 +432,7 @@ a:visited{
 
 /* !FOOTER */
 
-/* menu burger fin*/
+menu burger fin
 .fin, .rondfin{
     margin: 20px;
 }
