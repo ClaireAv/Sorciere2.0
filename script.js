@@ -48,7 +48,7 @@ burger.addEventListener ('click', ()=>{
 
           
 
-// Burger  croix
+// Burger  croix fin
 const burgerf = document.querySelector('.burgerfin');
 const rondf = document.querySelector('.rondfin');
 const menuf = document.querySelector('.menufin');
@@ -62,4 +62,43 @@ burgerf.addEventListener ('click', ()=>{
 });
 burgerf.addEventListener ('click', ()=>{
     menuf.classList.toggle('active');
+});
+
+
+const txtAnim = document.querySelector('.citation');
+
+new Typewriter(txtAnim,{
+  loop: false,
+  // deleteSpeed: .1
+})
+
+.changeDelay(50)
+.typeString('Si vous etes une femme et que vous regardez à l\'intérieur de vous même vous etes une sorcière!')
+.pauseFor(2000)
+.typeString('   W.I.T.C.H')
+.start()
+
+
+
+
+// TEST API
+
+let observer = new IntersectionObserver(function (observables) {
+  observables.forEach(function (observable) {
+    // L'élément devient visible
+    if (observable.intersectionRatio > 0.5) {
+      observable.target.classList.remove('not-visible')
+      observer.unobserve(observable.target)
+      console.log(observables)
+    }
+  })
+}, {
+  threshold: [0.5]
+});
+
+// On observe nos éléments
+let items = document.querySelectorAll('.yeah')
+items.forEach(function (item) {
+  item.classList.add('not-visible')
+  observer.observe(item)
 });
