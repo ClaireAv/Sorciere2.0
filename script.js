@@ -4,8 +4,8 @@
 $('.slider').slick({
     arrows: false,
     centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 1,
+    centerPadding: '50px',
+    slidesToShow: 3,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -15,7 +15,7 @@ $('.slider').slick({
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 3
         }
       },
       {
@@ -24,7 +24,7 @@ $('.slider').slick({
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 3
         }
       }
     ]
@@ -65,18 +65,18 @@ burgerf.addEventListener ('click', ()=>{
 });
 
 
-const txtAnim = document.querySelector('.citation');
+// const txtAnim = document.querySelector('.citation');
 
-new Typewriter(txtAnim,{
-  loop: false,
-  // deleteSpeed: .1
-})
+// new Typewriter(txtAnim,{
+//   loop: false,
+//   // deleteSpeed: .1
+// })
 
-.changeDelay(50)
-.typeString('Si vous etes une femme et que vous regardez à l\'intérieur de vous même vous etes une sorcière!')
-.pauseFor(2000)
-.typeString('   W.I.T.C.H')
-.start()
+// .changeDelay(50)
+// .typeString('Si vous etes une femme et que vous regardez à l\'intérieur de vous même vous êtes une sorcière!')
+// .pauseFor(2000)
+// .typeString('   W.I.T.C.H')
+// .start()
 
 
 
