@@ -1,0 +1,31 @@
+
+
+body{
+    background: black url(images/VECTORpc.png);
+    color: white;
+    /* font-family: 'Trocchi'; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    /* font-family: 'Poppins'; */
+}
+a:visited{
+    color: white;
+}
+
+h1{
+    font-size: 70px;
+    /* margin: 0px 100px; */
+    font-family: 'Trocchi';
+}
+ul{
+ font-size: 25px;
+}
+ li{
+    color: rgba(109, 131, 115);
+}

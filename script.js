@@ -65,20 +65,6 @@ burgerf.addEventListener ('click', ()=>{
 });
 
 
-// const txtAnim = document.querySelector('.citation');
-
-// new Typewriter(txtAnim,{
-//   loop: false,
-//   // deleteSpeed: .1
-// })
-
-// .changeDelay(50)
-// .typeString('Si vous etes une femme et que vous regardez à l\'intérieur de vous même vous êtes une sorcière!')
-// .pauseFor(2000)
-// .typeString('   W.I.T.C.H')
-// .start()
-
-
 
 
 // TEST API
