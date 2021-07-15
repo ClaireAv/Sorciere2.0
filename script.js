@@ -3,8 +3,8 @@
 // CAROUSEL
 $('.slider').slick({
     arrows: false,
-    centerMode: true,
-    centerPadding: '50px',
+    // centerMode: true,
+    // centerPadding: '50px',
     slidesToShow: 3,
     autoplay: true,
     autoplaySpeed: 2000,
